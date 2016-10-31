@@ -1,15 +1,15 @@
 ﻿namespace Sitecore.Support.WFFM.Analytics.Providers
 {
-  using Sitecore.Diagnostics;
-  using Sitecore.WFFM.Abstractions.Analytics;
-  using Sitecore.WFFM.Abstractions.Data;
-  using Sitecore.WFFM.Abstractions.Shared;
-  using Sitecore.WFFM.Analytics.Model;
   using System;
   using System.Collections.Generic;
   using System.Data;
   using System.Data.SqlClient;
   using System.Text;
+  using Sitecore.Diagnostics;
+  using Sitecore.WFFM.Abstractions.Analytics;
+  using Sitecore.WFFM.Abstractions.Data;
+  using Sitecore.WFFM.Abstractions.Shared;
+  using Sitecore.WFFM.Analytics.Model;
 
   public class SqlFormsDataProvider : IWffmDataProvider
   {

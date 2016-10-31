@@ -72,9 +72,9 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultImplActionExecutor.cs" />
+    <Compile Include="Forms\Core\Dependencies\DefaultImplActionExecutor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlFormsDataProvider.cs" />
+    <Compile Include="WFFM\Analytics\Providers\SqlFormsDataProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\zzz\Sitecore.Support.127005.config" />
