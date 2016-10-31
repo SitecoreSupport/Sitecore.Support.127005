@@ -17,11 +17,12 @@
     private readonly string connectionString;
     private readonly ISettings settings;
 
+    [UsedImplicitly]
     public SqlFormsDataProvider(string connectionStringName, ISettings settings, IDbConnectionProvider connectionProvider)
     {
-      Assert.ArgumentNotNullOrEmpty(connectionStringName, "connectionStringName");
-      Assert.ArgumentNotNull(settings, "settings");
-      Assert.ArgumentNotNull(connectionProvider, "connectionProvider");
+      Assert.ArgumentNotNullOrEmpty(connectionStringName, nameof(connectionStringName));
+      Assert.ArgumentNotNull(settings, nameof(settings));
+      Assert.ArgumentNotNull(connectionProvider, nameof(connectionProvider));
       this.connectionString = settings.GetConnectionString(connectionStringName);
       this.settings = settings;
       this.connectionProvider = connectionProvider;
